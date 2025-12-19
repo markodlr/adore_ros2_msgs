@@ -11,13 +11,8 @@
 # * Contributors: 
 # *   Marko Mizdrak
 # ********************************************************************************
-MapPoint[] inner_points
-MapPoint[] outer_points
-MapPoint[] center_points
-bool left_of_reference
-float64 speed_limit # m/s
-uint64 id
-uint64 road_id
-uint8 type
-uint8 material
-float64 lateral_offset
+
+MapPoint[] reference_line
+MapPoint[] left_boundary
+MapPoint[] right_boundary
+std_msgs/Header header
